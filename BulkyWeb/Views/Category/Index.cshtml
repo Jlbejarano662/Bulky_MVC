@@ -12,7 +12,7 @@
             </a>
         </div>
     </div>
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-sm">
         <thead>
             <tr>
                 <th>
@@ -21,7 +21,7 @@
                 <th>
                     Display Order
                 </th>
-                <th></th>
+                <th class="w-25"></th>
             </tr>
         </thead>
         <tbody>
@@ -30,12 +30,12 @@
                 <tr>
                     <td>@obj.Name</td>
                     <td>@obj.DisplayOrder</td>
-                    <td>
-                        <div class="w-75 btn-group" role="group">
-                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                    <td class="d-flex justify-content-center align-items-center">
+                        <div class="w-75 btn-group btn-group-sm" role="group">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary w-25 mx-2">
                                 <i class="bi bi-pencil-fill"></i> Edit
                             </a>
-                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger w-25 mx-2">
                                 <i class="bi bi-trash-fill"></i> Delete
                             </a>
                         </div>
